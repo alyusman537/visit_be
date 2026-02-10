@@ -1,0 +1,1526 @@
+ERROR - 2026-02-08 12:29:17 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#3 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+#5 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/BaseModel.php(713): CodeIgniter\Model->doFirst()
+#6 /mnt/DATA/SINAU/ci4/visit_be/app/Controllers/Login.php(28): CodeIgniter\BaseModel->first()
+#7 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(951): App\Controllers\Login->index()
+#8 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /mnt/DATA/SINAU/ci4/visit_be/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#2 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+#4 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/BaseModel.php(713): CodeIgniter\Model->doFirst()
+#5 /mnt/DATA/SINAU/ci4/visit_be/app/Controllers/Login.php(28): CodeIgniter\BaseModel->first()
+#6 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(951): App\Controllers\Login->index()
+#7 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#9 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 /mnt/DATA/SINAU/ci4/visit_be/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#12 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#13 {main}
+CRITICAL - 2026-02-08 12:29:17 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+[Method: POST, Route: api/login]
+in SYSTEMPATH/Database/BaseConnection.php on line 465.
+ 1 SYSTEMPATH/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(713): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/Login.php(28): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Login->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/mnt/DATA/SINAU/ci4/visit_be/public/index.php')
+ERROR - 2026-02-08 12:29:36 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#3 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+#5 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/BaseModel.php(713): CodeIgniter\Model->doFirst()
+#6 /mnt/DATA/SINAU/ci4/visit_be/app/Controllers/Login.php(28): CodeIgniter\BaseModel->first()
+#7 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(951): App\Controllers\Login->index()
+#8 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /mnt/DATA/SINAU/ci4/visit_be/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#2 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+#4 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/BaseModel.php(713): CodeIgniter\Model->doFirst()
+#5 /mnt/DATA/SINAU/ci4/visit_be/app/Controllers/Login.php(28): CodeIgniter\BaseModel->first()
+#6 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(951): App\Controllers\Login->index()
+#7 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#9 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 /mnt/DATA/SINAU/ci4/visit_be/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#12 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#13 {main}
+CRITICAL - 2026-02-08 12:29:36 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+[Method: POST, Route: api/login]
+in SYSTEMPATH/Database/BaseConnection.php on line 465.
+ 1 SYSTEMPATH/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(713): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/Login.php(28): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Login->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/mnt/DATA/SINAU/ci4/visit_be/public/index.php')
+ERROR - 2026-02-08 12:29:37 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#3 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+#5 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/BaseModel.php(713): CodeIgniter\Model->doFirst()
+#6 /mnt/DATA/SINAU/ci4/visit_be/app/Controllers/Login.php(28): CodeIgniter\BaseModel->first()
+#7 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(951): App\Controllers\Login->index()
+#8 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /mnt/DATA/SINAU/ci4/visit_be/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#2 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+#4 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/BaseModel.php(713): CodeIgniter\Model->doFirst()
+#5 /mnt/DATA/SINAU/ci4/visit_be/app/Controllers/Login.php(28): CodeIgniter\BaseModel->first()
+#6 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(951): App\Controllers\Login->index()
+#7 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#9 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 /mnt/DATA/SINAU/ci4/visit_be/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#12 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#13 {main}
+CRITICAL - 2026-02-08 12:29:37 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+[Method: POST, Route: api/login]
+in SYSTEMPATH/Database/BaseConnection.php on line 465.
+ 1 SYSTEMPATH/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(713): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/Login.php(28): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Login->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/mnt/DATA/SINAU/ci4/visit_be/public/index.php')
+ERROR - 2026-02-08 12:30:30 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#3 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+#5 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/BaseModel.php(713): CodeIgniter\Model->doFirst()
+#6 /mnt/DATA/SINAU/ci4/visit_be/app/Controllers/Login.php(28): CodeIgniter\BaseModel->first()
+#7 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(951): App\Controllers\Login->index()
+#8 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /mnt/DATA/SINAU/ci4/visit_be/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#2 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+#4 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/BaseModel.php(713): CodeIgniter\Model->doFirst()
+#5 /mnt/DATA/SINAU/ci4/visit_be/app/Controllers/Login.php(28): CodeIgniter\BaseModel->first()
+#6 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(951): App\Controllers\Login->index()
+#7 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#9 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 /mnt/DATA/SINAU/ci4/visit_be/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#12 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#13 {main}
+CRITICAL - 2026-02-08 12:30:30 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+[Method: POST, Route: api/login]
+in SYSTEMPATH/Database/BaseConnection.php on line 465.
+ 1 SYSTEMPATH/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(713): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/Login.php(28): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Login->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/mnt/DATA/SINAU/ci4/visit_be/public/index.php')
+ERROR - 2026-02-08 12:30:32 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#3 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+#5 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/BaseModel.php(713): CodeIgniter\Model->doFirst()
+#6 /mnt/DATA/SINAU/ci4/visit_be/app/Controllers/Login.php(28): CodeIgniter\BaseModel->first()
+#7 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(951): App\Controllers\Login->index()
+#8 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /mnt/DATA/SINAU/ci4/visit_be/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#2 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+#4 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/BaseModel.php(713): CodeIgniter\Model->doFirst()
+#5 /mnt/DATA/SINAU/ci4/visit_be/app/Controllers/Login.php(28): CodeIgniter\BaseModel->first()
+#6 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(951): App\Controllers\Login->index()
+#7 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#9 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 /mnt/DATA/SINAU/ci4/visit_be/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#12 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#13 {main}
+CRITICAL - 2026-02-08 12:30:32 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+[Method: POST, Route: api/login]
+in SYSTEMPATH/Database/BaseConnection.php on line 465.
+ 1 SYSTEMPATH/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(713): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/Login.php(28): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Login->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/mnt/DATA/SINAU/ci4/visit_be/public/index.php')
+ERROR - 2026-02-08 12:32:21 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#3 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+#5 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/BaseModel.php(713): CodeIgniter\Model->doFirst()
+#6 /mnt/DATA/SINAU/ci4/visit_be/app/Controllers/Login.php(28): CodeIgniter\BaseModel->first()
+#7 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(951): App\Controllers\Login->index()
+#8 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /mnt/DATA/SINAU/ci4/visit_be/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#2 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+#4 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/BaseModel.php(713): CodeIgniter\Model->doFirst()
+#5 /mnt/DATA/SINAU/ci4/visit_be/app/Controllers/Login.php(28): CodeIgniter\BaseModel->first()
+#6 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(951): App\Controllers\Login->index()
+#7 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#9 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 /mnt/DATA/SINAU/ci4/visit_be/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#12 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#13 {main}
+CRITICAL - 2026-02-08 12:32:21 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+[Method: POST, Route: api/login]
+in SYSTEMPATH/Database/BaseConnection.php on line 465.
+ 1 SYSTEMPATH/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(713): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/Login.php(28): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Login->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/mnt/DATA/SINAU/ci4/visit_be/public/index.php')
+ERROR - 2026-02-08 12:40:15 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#3 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+#5 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/BaseModel.php(713): CodeIgniter\Model->doFirst()
+#6 /mnt/DATA/SINAU/ci4/visit_be/app/Controllers/Login.php(28): CodeIgniter\BaseModel->first()
+#7 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(951): App\Controllers\Login->index()
+#8 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /mnt/DATA/SINAU/ci4/visit_be/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#2 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+#4 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/BaseModel.php(713): CodeIgniter\Model->doFirst()
+#5 /mnt/DATA/SINAU/ci4/visit_be/app/Controllers/Login.php(28): CodeIgniter\BaseModel->first()
+#6 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(951): App\Controllers\Login->index()
+#7 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#9 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 /mnt/DATA/SINAU/ci4/visit_be/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#12 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#13 {main}
+CRITICAL - 2026-02-08 12:40:15 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+[Method: POST, Route: api/login]
+in SYSTEMPATH/Database/BaseConnection.php on line 465.
+ 1 SYSTEMPATH/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(713): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/Login.php(28): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Login->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/mnt/DATA/SINAU/ci4/visit_be/public/index.php')
+ERROR - 2026-02-08 12:44:15 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#3 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+#5 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/BaseModel.php(713): CodeIgniter\Model->doFirst()
+#6 /mnt/DATA/SINAU/ci4/visit_be/app/Controllers/Login.php(28): CodeIgniter\BaseModel->first()
+#7 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(951): App\Controllers\Login->index()
+#8 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /mnt/DATA/SINAU/ci4/visit_be/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#2 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+#4 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/BaseModel.php(713): CodeIgniter\Model->doFirst()
+#5 /mnt/DATA/SINAU/ci4/visit_be/app/Controllers/Login.php(28): CodeIgniter\BaseModel->first()
+#6 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(951): App\Controllers\Login->index()
+#7 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#9 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 /mnt/DATA/SINAU/ci4/visit_be/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#12 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#13 {main}
+CRITICAL - 2026-02-08 12:44:15 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+[Method: POST, Route: api/login]
+in SYSTEMPATH/Database/BaseConnection.php on line 465.
+ 1 SYSTEMPATH/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(713): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/Login.php(28): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Login->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/mnt/DATA/SINAU/ci4/visit_be/public/index.php')
+ERROR - 2026-02-08 12:44:17 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#3 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+#5 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/BaseModel.php(713): CodeIgniter\Model->doFirst()
+#6 /mnt/DATA/SINAU/ci4/visit_be/app/Controllers/Login.php(28): CodeIgniter\BaseModel->first()
+#7 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(951): App\Controllers\Login->index()
+#8 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /mnt/DATA/SINAU/ci4/visit_be/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#2 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+#4 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/BaseModel.php(713): CodeIgniter\Model->doFirst()
+#5 /mnt/DATA/SINAU/ci4/visit_be/app/Controllers/Login.php(28): CodeIgniter\BaseModel->first()
+#6 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(951): App\Controllers\Login->index()
+#7 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#9 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 /mnt/DATA/SINAU/ci4/visit_be/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#12 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#13 {main}
+CRITICAL - 2026-02-08 12:44:17 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+[Method: POST, Route: api/login]
+in SYSTEMPATH/Database/BaseConnection.php on line 465.
+ 1 SYSTEMPATH/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(713): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/Login.php(28): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Login->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/mnt/DATA/SINAU/ci4/visit_be/public/index.php')
+ERROR - 2026-02-08 12:44:56 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#3 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+#5 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/BaseModel.php(713): CodeIgniter\Model->doFirst()
+#6 /mnt/DATA/SINAU/ci4/visit_be/app/Controllers/Login.php(28): CodeIgniter\BaseModel->first()
+#7 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(951): App\Controllers\Login->index()
+#8 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /mnt/DATA/SINAU/ci4/visit_be/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#2 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+#4 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/BaseModel.php(713): CodeIgniter\Model->doFirst()
+#5 /mnt/DATA/SINAU/ci4/visit_be/app/Controllers/Login.php(28): CodeIgniter\BaseModel->first()
+#6 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(951): App\Controllers\Login->index()
+#7 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#9 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 /mnt/DATA/SINAU/ci4/visit_be/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#12 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#13 {main}
+CRITICAL - 2026-02-08 12:44:56 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+[Method: POST, Route: api/login]
+in SYSTEMPATH/Database/BaseConnection.php on line 465.
+ 1 SYSTEMPATH/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(713): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/Login.php(28): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Login->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/mnt/DATA/SINAU/ci4/visit_be/public/index.php')
+ERROR - 2026-02-08 12:44:58 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#3 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+#5 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/BaseModel.php(713): CodeIgniter\Model->doFirst()
+#6 /mnt/DATA/SINAU/ci4/visit_be/app/Controllers/Login.php(28): CodeIgniter\BaseModel->first()
+#7 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(951): App\Controllers\Login->index()
+#8 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /mnt/DATA/SINAU/ci4/visit_be/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#2 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+#4 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/BaseModel.php(713): CodeIgniter\Model->doFirst()
+#5 /mnt/DATA/SINAU/ci4/visit_be/app/Controllers/Login.php(28): CodeIgniter\BaseModel->first()
+#6 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(951): App\Controllers\Login->index()
+#7 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#9 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 /mnt/DATA/SINAU/ci4/visit_be/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#12 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#13 {main}
+CRITICAL - 2026-02-08 12:44:58 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+[Method: POST, Route: api/login]
+in SYSTEMPATH/Database/BaseConnection.php on line 465.
+ 1 SYSTEMPATH/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(713): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/Login.php(28): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Login->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/mnt/DATA/SINAU/ci4/visit_be/public/index.php')
+ERROR - 2026-02-08 12:44:58 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#3 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+#5 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/BaseModel.php(713): CodeIgniter\Model->doFirst()
+#6 /mnt/DATA/SINAU/ci4/visit_be/app/Controllers/Login.php(28): CodeIgniter\BaseModel->first()
+#7 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(951): App\Controllers\Login->index()
+#8 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /mnt/DATA/SINAU/ci4/visit_be/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#2 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+#4 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/BaseModel.php(713): CodeIgniter\Model->doFirst()
+#5 /mnt/DATA/SINAU/ci4/visit_be/app/Controllers/Login.php(28): CodeIgniter\BaseModel->first()
+#6 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(951): App\Controllers\Login->index()
+#7 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#9 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 /mnt/DATA/SINAU/ci4/visit_be/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#12 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#13 {main}
+CRITICAL - 2026-02-08 12:44:58 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+[Method: POST, Route: api/login]
+in SYSTEMPATH/Database/BaseConnection.php on line 465.
+ 1 SYSTEMPATH/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(713): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/Login.php(28): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Login->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/mnt/DATA/SINAU/ci4/visit_be/public/index.php')
+ERROR - 2026-02-08 12:51:53 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#3 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+#5 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/BaseModel.php(713): CodeIgniter\Model->doFirst()
+#6 /mnt/DATA/SINAU/ci4/visit_be/app/Controllers/Login.php(28): CodeIgniter\BaseModel->first()
+#7 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(951): App\Controllers\Login->index()
+#8 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /mnt/DATA/SINAU/ci4/visit_be/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#2 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+#4 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/BaseModel.php(713): CodeIgniter\Model->doFirst()
+#5 /mnt/DATA/SINAU/ci4/visit_be/app/Controllers/Login.php(28): CodeIgniter\BaseModel->first()
+#6 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(951): App\Controllers\Login->index()
+#7 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#9 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 /mnt/DATA/SINAU/ci4/visit_be/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#12 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#13 {main}
+CRITICAL - 2026-02-08 12:51:54 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+[Method: POST, Route: api/login]
+in SYSTEMPATH/Database/BaseConnection.php on line 465.
+ 1 SYSTEMPATH/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(713): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/Login.php(28): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Login->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/mnt/DATA/SINAU/ci4/visit_be/public/index.php')
+ERROR - 2026-02-08 12:53:43 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#3 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+#5 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/BaseModel.php(713): CodeIgniter\Model->doFirst()
+#6 /mnt/DATA/SINAU/ci4/visit_be/app/Controllers/Login.php(28): CodeIgniter\BaseModel->first()
+#7 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(951): App\Controllers\Login->index()
+#8 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /mnt/DATA/SINAU/ci4/visit_be/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#2 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+#4 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/BaseModel.php(713): CodeIgniter\Model->doFirst()
+#5 /mnt/DATA/SINAU/ci4/visit_be/app/Controllers/Login.php(28): CodeIgniter\BaseModel->first()
+#6 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(951): App\Controllers\Login->index()
+#7 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#9 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 /mnt/DATA/SINAU/ci4/visit_be/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#12 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#13 {main}
+CRITICAL - 2026-02-08 12:53:43 --> CodeIgniter\HTTP\Exceptions\HTTPException: 0 is not a valid HTTP return status code
+[Method: POST, Route: api/login]
+in SYSTEMPATH/HTTP/ResponseTrait.php on line 82.
+ 1 SYSTEMPATH/HTTP/ResponseTrait.php(82): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidStatusCode()
+ 2 SYSTEMPATH/API/ResponseTrait.php(116): CodeIgniter\HTTP\Response->setStatusCode()
+ 3 SYSTEMPATH/API/ResponseTrait.php(148): App\Controllers\Login->respond()
+ 4 APPPATH/Controllers/Login.php(52): App\Controllers\Login->fail()
+ 5 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Login->index()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+11 SYSTEMPATH/rewrite.php(44): require_once('/mnt/DATA/SINAU/ci4/visit_be/public/index.php')
+ERROR - 2026-02-08 12:53:44 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#3 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+#5 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/BaseModel.php(713): CodeIgniter\Model->doFirst()
+#6 /mnt/DATA/SINAU/ci4/visit_be/app/Controllers/Login.php(28): CodeIgniter\BaseModel->first()
+#7 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(951): App\Controllers\Login->index()
+#8 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /mnt/DATA/SINAU/ci4/visit_be/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#2 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+#4 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/BaseModel.php(713): CodeIgniter\Model->doFirst()
+#5 /mnt/DATA/SINAU/ci4/visit_be/app/Controllers/Login.php(28): CodeIgniter\BaseModel->first()
+#6 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(951): App\Controllers\Login->index()
+#7 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#9 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 /mnt/DATA/SINAU/ci4/visit_be/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#12 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#13 {main}
+CRITICAL - 2026-02-08 12:53:44 --> CodeIgniter\HTTP\Exceptions\HTTPException: 0 is not a valid HTTP return status code
+[Method: POST, Route: api/login]
+in SYSTEMPATH/HTTP/ResponseTrait.php on line 82.
+ 1 SYSTEMPATH/HTTP/ResponseTrait.php(82): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidStatusCode()
+ 2 SYSTEMPATH/API/ResponseTrait.php(116): CodeIgniter\HTTP\Response->setStatusCode()
+ 3 SYSTEMPATH/API/ResponseTrait.php(148): App\Controllers\Login->respond()
+ 4 APPPATH/Controllers/Login.php(52): App\Controllers\Login->fail()
+ 5 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Login->index()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+11 SYSTEMPATH/rewrite.php(44): require_once('/mnt/DATA/SINAU/ci4/visit_be/public/index.php')
+ERROR - 2026-02-08 12:53:45 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#3 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+#5 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/BaseModel.php(713): CodeIgniter\Model->doFirst()
+#6 /mnt/DATA/SINAU/ci4/visit_be/app/Controllers/Login.php(28): CodeIgniter\BaseModel->first()
+#7 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(951): App\Controllers\Login->index()
+#8 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /mnt/DATA/SINAU/ci4/visit_be/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#2 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+#4 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/BaseModel.php(713): CodeIgniter\Model->doFirst()
+#5 /mnt/DATA/SINAU/ci4/visit_be/app/Controllers/Login.php(28): CodeIgniter\BaseModel->first()
+#6 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(951): App\Controllers\Login->index()
+#7 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#9 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 /mnt/DATA/SINAU/ci4/visit_be/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#12 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#13 {main}
+CRITICAL - 2026-02-08 12:53:45 --> CodeIgniter\HTTP\Exceptions\HTTPException: 0 is not a valid HTTP return status code
+[Method: POST, Route: api/login]
+in SYSTEMPATH/HTTP/ResponseTrait.php on line 82.
+ 1 SYSTEMPATH/HTTP/ResponseTrait.php(82): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidStatusCode()
+ 2 SYSTEMPATH/API/ResponseTrait.php(116): CodeIgniter\HTTP\Response->setStatusCode()
+ 3 SYSTEMPATH/API/ResponseTrait.php(148): App\Controllers\Login->respond()
+ 4 APPPATH/Controllers/Login.php(52): App\Controllers\Login->fail()
+ 5 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Login->index()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+11 SYSTEMPATH/rewrite.php(44): require_once('/mnt/DATA/SINAU/ci4/visit_be/public/index.php')
+ERROR - 2026-02-08 12:54:09 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#3 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+#5 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/BaseModel.php(713): CodeIgniter\Model->doFirst()
+#6 /mnt/DATA/SINAU/ci4/visit_be/app/Controllers/Login.php(28): CodeIgniter\BaseModel->first()
+#7 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(951): App\Controllers\Login->index()
+#8 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /mnt/DATA/SINAU/ci4/visit_be/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#2 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+#4 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/BaseModel.php(713): CodeIgniter\Model->doFirst()
+#5 /mnt/DATA/SINAU/ci4/visit_be/app/Controllers/Login.php(28): CodeIgniter\BaseModel->first()
+#6 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(951): App\Controllers\Login->index()
+#7 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#9 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 /mnt/DATA/SINAU/ci4/visit_be/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#12 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#13 {main}
+CRITICAL - 2026-02-08 12:54:09 --> CodeIgniter\HTTP\Exceptions\HTTPException: 0 is not a valid HTTP return status code
+[Method: POST, Route: api/login]
+in SYSTEMPATH/HTTP/ResponseTrait.php on line 82.
+ 1 SYSTEMPATH/HTTP/ResponseTrait.php(82): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidStatusCode()
+ 2 SYSTEMPATH/API/ResponseTrait.php(116): CodeIgniter\HTTP\Response->setStatusCode()
+ 3 SYSTEMPATH/API/ResponseTrait.php(148): App\Controllers\Login->respond()
+ 4 APPPATH/Controllers/Login.php(52): App\Controllers\Login->fail()
+ 5 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Login->index()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+11 SYSTEMPATH/rewrite.php(44): require_once('/mnt/DATA/SINAU/ci4/visit_be/public/index.php')
+ERROR - 2026-02-08 12:54:10 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#3 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+#5 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/BaseModel.php(713): CodeIgniter\Model->doFirst()
+#6 /mnt/DATA/SINAU/ci4/visit_be/app/Controllers/Login.php(28): CodeIgniter\BaseModel->first()
+#7 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(951): App\Controllers\Login->index()
+#8 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /mnt/DATA/SINAU/ci4/visit_be/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#2 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+#4 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/BaseModel.php(713): CodeIgniter\Model->doFirst()
+#5 /mnt/DATA/SINAU/ci4/visit_be/app/Controllers/Login.php(28): CodeIgniter\BaseModel->first()
+#6 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(951): App\Controllers\Login->index()
+#7 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#9 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 /mnt/DATA/SINAU/ci4/visit_be/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#12 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#13 {main}
+CRITICAL - 2026-02-08 12:54:10 --> CodeIgniter\HTTP\Exceptions\HTTPException: 0 is not a valid HTTP return status code
+[Method: POST, Route: api/login]
+in SYSTEMPATH/HTTP/ResponseTrait.php on line 82.
+ 1 SYSTEMPATH/HTTP/ResponseTrait.php(82): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidStatusCode()
+ 2 SYSTEMPATH/API/ResponseTrait.php(116): CodeIgniter\HTTP\Response->setStatusCode()
+ 3 SYSTEMPATH/API/ResponseTrait.php(148): App\Controllers\Login->respond()
+ 4 APPPATH/Controllers/Login.php(52): App\Controllers\Login->fail()
+ 5 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Login->index()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+11 SYSTEMPATH/rewrite.php(44): require_once('/mnt/DATA/SINAU/ci4/visit_be/public/index.php')
+ERROR - 2026-02-08 12:54:55 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#3 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+#5 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/BaseModel.php(675): CodeIgniter\Model->doFindAll()
+#6 /mnt/DATA/SINAU/ci4/visit_be/app/Controllers/Login.php(28): CodeIgniter\BaseModel->findAll()
+#7 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(951): App\Controllers\Login->index()
+#8 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /mnt/DATA/SINAU/ci4/visit_be/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#2 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+#4 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/BaseModel.php(675): CodeIgniter\Model->doFindAll()
+#5 /mnt/DATA/SINAU/ci4/visit_be/app/Controllers/Login.php(28): CodeIgniter\BaseModel->findAll()
+#6 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(951): App\Controllers\Login->index()
+#7 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#9 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 /mnt/DATA/SINAU/ci4/visit_be/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#12 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#13 {main}
+CRITICAL - 2026-02-08 12:54:55 --> CodeIgniter\HTTP\Exceptions\HTTPException: 0 is not a valid HTTP return status code
+[Method: POST, Route: api/login]
+in SYSTEMPATH/HTTP/ResponseTrait.php on line 82.
+ 1 SYSTEMPATH/HTTP/ResponseTrait.php(82): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidStatusCode()
+ 2 SYSTEMPATH/API/ResponseTrait.php(116): CodeIgniter\HTTP\Response->setStatusCode()
+ 3 SYSTEMPATH/API/ResponseTrait.php(148): App\Controllers\Login->respond()
+ 4 APPPATH/Controllers/Login.php(52): App\Controllers\Login->fail()
+ 5 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Login->index()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+11 SYSTEMPATH/rewrite.php(44): require_once('/mnt/DATA/SINAU/ci4/visit_be/public/index.php')
+ERROR - 2026-02-08 12:54:56 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#3 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+#5 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/BaseModel.php(675): CodeIgniter\Model->doFindAll()
+#6 /mnt/DATA/SINAU/ci4/visit_be/app/Controllers/Login.php(28): CodeIgniter\BaseModel->findAll()
+#7 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(951): App\Controllers\Login->index()
+#8 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /mnt/DATA/SINAU/ci4/visit_be/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#2 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+#4 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/BaseModel.php(675): CodeIgniter\Model->doFindAll()
+#5 /mnt/DATA/SINAU/ci4/visit_be/app/Controllers/Login.php(28): CodeIgniter\BaseModel->findAll()
+#6 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(951): App\Controllers\Login->index()
+#7 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#9 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 /mnt/DATA/SINAU/ci4/visit_be/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#12 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#13 {main}
+CRITICAL - 2026-02-08 12:54:56 --> CodeIgniter\HTTP\Exceptions\HTTPException: 0 is not a valid HTTP return status code
+[Method: POST, Route: api/login]
+in SYSTEMPATH/HTTP/ResponseTrait.php on line 82.
+ 1 SYSTEMPATH/HTTP/ResponseTrait.php(82): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidStatusCode()
+ 2 SYSTEMPATH/API/ResponseTrait.php(116): CodeIgniter\HTTP\Response->setStatusCode()
+ 3 SYSTEMPATH/API/ResponseTrait.php(148): App\Controllers\Login->respond()
+ 4 APPPATH/Controllers/Login.php(52): App\Controllers\Login->fail()
+ 5 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Login->index()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+11 SYSTEMPATH/rewrite.php(44): require_once('/mnt/DATA/SINAU/ci4/visit_be/public/index.php')
+ERROR - 2026-02-08 12:55:07 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#3 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+#5 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/BaseModel.php(675): CodeIgniter\Model->doFindAll()
+#6 /mnt/DATA/SINAU/ci4/visit_be/app/Controllers/Login.php(28): CodeIgniter\BaseModel->findAll()
+#7 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(951): App\Controllers\Login->index()
+#8 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /mnt/DATA/SINAU/ci4/visit_be/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#2 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+#4 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/BaseModel.php(675): CodeIgniter\Model->doFindAll()
+#5 /mnt/DATA/SINAU/ci4/visit_be/app/Controllers/Login.php(28): CodeIgniter\BaseModel->findAll()
+#6 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(951): App\Controllers\Login->index()
+#7 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#9 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 /mnt/DATA/SINAU/ci4/visit_be/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#12 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#13 {main}
+CRITICAL - 2026-02-08 12:55:07 --> CodeIgniter\HTTP\Exceptions\HTTPException: 0 is not a valid HTTP return status code
+[Method: POST, Route: api/login]
+in SYSTEMPATH/HTTP/ResponseTrait.php on line 82.
+ 1 SYSTEMPATH/HTTP/ResponseTrait.php(82): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidStatusCode()
+ 2 SYSTEMPATH/API/ResponseTrait.php(116): CodeIgniter\HTTP\Response->setStatusCode()
+ 3 SYSTEMPATH/API/ResponseTrait.php(148): App\Controllers\Login->respond()
+ 4 APPPATH/Controllers/Login.php(52): App\Controllers\Login->fail()
+ 5 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Login->index()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+11 SYSTEMPATH/rewrite.php(44): require_once('/mnt/DATA/SINAU/ci4/visit_be/public/index.php')
+ERROR - 2026-02-08 13:00:40 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#3 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+#5 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/BaseModel.php(675): CodeIgniter\Model->doFindAll()
+#6 /mnt/DATA/SINAU/ci4/visit_be/app/Controllers/Login.php(28): CodeIgniter\BaseModel->findAll()
+#7 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(951): App\Controllers\Login->index()
+#8 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /mnt/DATA/SINAU/ci4/visit_be/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#2 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+#4 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/BaseModel.php(675): CodeIgniter\Model->doFindAll()
+#5 /mnt/DATA/SINAU/ci4/visit_be/app/Controllers/Login.php(28): CodeIgniter\BaseModel->findAll()
+#6 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(951): App\Controllers\Login->index()
+#7 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#9 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 /mnt/DATA/SINAU/ci4/visit_be/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#12 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#13 {main}
+CRITICAL - 2026-02-08 13:00:40 --> CodeIgniter\HTTP\Exceptions\HTTPException: 0 is not a valid HTTP return status code
+[Method: POST, Route: api/login]
+in SYSTEMPATH/HTTP/ResponseTrait.php on line 82.
+ 1 SYSTEMPATH/HTTP/ResponseTrait.php(82): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidStatusCode()
+ 2 SYSTEMPATH/API/ResponseTrait.php(116): CodeIgniter\HTTP\Response->setStatusCode()
+ 3 SYSTEMPATH/API/ResponseTrait.php(148): App\Controllers\Login->respond()
+ 4 APPPATH/Controllers/Login.php(52): App\Controllers\Login->fail()
+ 5 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Login->index()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+11 SYSTEMPATH/rewrite.php(44): require_once('/mnt/DATA/SINAU/ci4/visit_be/public/index.php')
+ERROR - 2026-02-08 13:00:41 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#3 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+#5 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/BaseModel.php(675): CodeIgniter\Model->doFindAll()
+#6 /mnt/DATA/SINAU/ci4/visit_be/app/Controllers/Login.php(28): CodeIgniter\BaseModel->findAll()
+#7 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(951): App\Controllers\Login->index()
+#8 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /mnt/DATA/SINAU/ci4/visit_be/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#2 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+#4 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/BaseModel.php(675): CodeIgniter\Model->doFindAll()
+#5 /mnt/DATA/SINAU/ci4/visit_be/app/Controllers/Login.php(28): CodeIgniter\BaseModel->findAll()
+#6 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(951): App\Controllers\Login->index()
+#7 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#9 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 /mnt/DATA/SINAU/ci4/visit_be/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#12 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#13 {main}
+CRITICAL - 2026-02-08 13:00:41 --> CodeIgniter\HTTP\Exceptions\HTTPException: 0 is not a valid HTTP return status code
+[Method: POST, Route: api/login]
+in SYSTEMPATH/HTTP/ResponseTrait.php on line 82.
+ 1 SYSTEMPATH/HTTP/ResponseTrait.php(82): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidStatusCode()
+ 2 SYSTEMPATH/API/ResponseTrait.php(116): CodeIgniter\HTTP\Response->setStatusCode()
+ 3 SYSTEMPATH/API/ResponseTrait.php(148): App\Controllers\Login->respond()
+ 4 APPPATH/Controllers/Login.php(52): App\Controllers\Login->fail()
+ 5 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Login->index()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+11 SYSTEMPATH/rewrite.php(44): require_once('/mnt/DATA/SINAU/ci4/visit_be/public/index.php')
+ERROR - 2026-02-08 13:01:04 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#3 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+#5 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/BaseModel.php(675): CodeIgniter\Model->doFindAll()
+#6 /mnt/DATA/SINAU/ci4/visit_be/app/Controllers/Login.php(28): CodeIgniter\BaseModel->findAll()
+#7 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(951): App\Controllers\Login->index()
+#8 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /mnt/DATA/SINAU/ci4/visit_be/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#2 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+#4 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/BaseModel.php(675): CodeIgniter\Model->doFindAll()
+#5 /mnt/DATA/SINAU/ci4/visit_be/app/Controllers/Login.php(28): CodeIgniter\BaseModel->findAll()
+#6 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(951): App\Controllers\Login->index()
+#7 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#9 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 /mnt/DATA/SINAU/ci4/visit_be/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#12 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#13 {main}
+CRITICAL - 2026-02-08 13:01:04 --> CodeIgniter\HTTP\Exceptions\HTTPException: 0 is not a valid HTTP return status code
+[Method: POST, Route: api/login]
+in SYSTEMPATH/HTTP/ResponseTrait.php on line 82.
+ 1 SYSTEMPATH/HTTP/ResponseTrait.php(82): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidStatusCode()
+ 2 SYSTEMPATH/API/ResponseTrait.php(116): CodeIgniter\HTTP\Response->setStatusCode()
+ 3 SYSTEMPATH/API/ResponseTrait.php(148): App\Controllers\Login->respond()
+ 4 APPPATH/Controllers/Login.php(52): App\Controllers\Login->fail()
+ 5 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Login->index()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+11 SYSTEMPATH/rewrite.php(44): require_once('/mnt/DATA/SINAU/ci4/visit_be/public/index.php')
+ERROR - 2026-02-08 13:01:42 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#3 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+#5 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/BaseModel.php(675): CodeIgniter\Model->doFindAll()
+#6 /mnt/DATA/SINAU/ci4/visit_be/app/Controllers/Login.php(28): CodeIgniter\BaseModel->findAll()
+#7 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(951): App\Controllers\Login->index()
+#8 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /mnt/DATA/SINAU/ci4/visit_be/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#2 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+#4 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/BaseModel.php(675): CodeIgniter\Model->doFindAll()
+#5 /mnt/DATA/SINAU/ci4/visit_be/app/Controllers/Login.php(28): CodeIgniter\BaseModel->findAll()
+#6 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(951): App\Controllers\Login->index()
+#7 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#9 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 /mnt/DATA/SINAU/ci4/visit_be/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#12 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#13 {main}
+CRITICAL - 2026-02-08 13:01:42 --> CodeIgniter\HTTP\Exceptions\HTTPException: 0 is not a valid HTTP return status code
+[Method: POST, Route: api/login]
+in SYSTEMPATH/HTTP/ResponseTrait.php on line 82.
+ 1 SYSTEMPATH/HTTP/ResponseTrait.php(82): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidStatusCode()
+ 2 SYSTEMPATH/API/ResponseTrait.php(116): CodeIgniter\HTTP\Response->setStatusCode()
+ 3 SYSTEMPATH/API/ResponseTrait.php(148): App\Controllers\Login->respond()
+ 4 APPPATH/Controllers/Login.php(52): App\Controllers\Login->fail()
+ 5 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Login->index()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+11 SYSTEMPATH/rewrite.php(44): require_once('/mnt/DATA/SINAU/ci4/visit_be/public/index.php')
+ERROR - 2026-02-08 13:03:36 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#3 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+#5 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/BaseModel.php(675): CodeIgniter\Model->doFindAll()
+#6 /mnt/DATA/SINAU/ci4/visit_be/app/Controllers/Login.php(28): CodeIgniter\BaseModel->findAll()
+#7 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(951): App\Controllers\Login->index()
+#8 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /mnt/DATA/SINAU/ci4/visit_be/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#2 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+#4 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/BaseModel.php(675): CodeIgniter\Model->doFindAll()
+#5 /mnt/DATA/SINAU/ci4/visit_be/app/Controllers/Login.php(28): CodeIgniter\BaseModel->findAll()
+#6 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(951): App\Controllers\Login->index()
+#7 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#9 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 /mnt/DATA/SINAU/ci4/visit_be/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#12 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#13 {main}
+CRITICAL - 2026-02-08 13:03:36 --> CodeIgniter\HTTP\Exceptions\HTTPException: 0 is not a valid HTTP return status code
+[Method: POST, Route: api/login]
+in SYSTEMPATH/HTTP/ResponseTrait.php on line 82.
+ 1 SYSTEMPATH/HTTP/ResponseTrait.php(82): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidStatusCode()
+ 2 SYSTEMPATH/API/ResponseTrait.php(116): CodeIgniter\HTTP\Response->setStatusCode()
+ 3 SYSTEMPATH/API/ResponseTrait.php(148): App\Controllers\Login->respond()
+ 4 APPPATH/Controllers/Login.php(52): App\Controllers\Login->fail()
+ 5 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Login->index()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+11 SYSTEMPATH/rewrite.php(44): require_once('/mnt/DATA/SINAU/ci4/visit_be/public/index.php')
+ERROR - 2026-02-08 13:16:40 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#3 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+#5 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/BaseModel.php(675): CodeIgniter\Model->doFindAll()
+#6 /mnt/DATA/SINAU/ci4/visit_be/app/Controllers/Login.php(28): CodeIgniter\BaseModel->findAll()
+#7 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(951): App\Controllers\Login->index()
+#8 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /mnt/DATA/SINAU/ci4/visit_be/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#2 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+#4 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/BaseModel.php(675): CodeIgniter\Model->doFindAll()
+#5 /mnt/DATA/SINAU/ci4/visit_be/app/Controllers/Login.php(28): CodeIgniter\BaseModel->findAll()
+#6 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(951): App\Controllers\Login->index()
+#7 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#9 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 /mnt/DATA/SINAU/ci4/visit_be/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#12 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#13 {main}
+CRITICAL - 2026-02-08 13:16:40 --> CodeIgniter\HTTP\Exceptions\HTTPException: 0 is not a valid HTTP return status code
+[Method: POST, Route: api/login]
+in SYSTEMPATH/HTTP/ResponseTrait.php on line 82.
+ 1 SYSTEMPATH/HTTP/ResponseTrait.php(82): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidStatusCode()
+ 2 SYSTEMPATH/API/ResponseTrait.php(116): CodeIgniter\HTTP\Response->setStatusCode()
+ 3 SYSTEMPATH/API/ResponseTrait.php(148): App\Controllers\Login->respond()
+ 4 APPPATH/Controllers/Login.php(52): App\Controllers\Login->fail()
+ 5 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Login->index()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+11 SYSTEMPATH/rewrite.php(44): require_once('/mnt/DATA/SINAU/ci4/visit_be/public/index.php')
+ERROR - 2026-02-08 13:19:33 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#3 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+#5 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/BaseModel.php(675): CodeIgniter\Model->doFindAll()
+#6 /mnt/DATA/SINAU/ci4/visit_be/app/Controllers/Login.php(28): CodeIgniter\BaseModel->findAll()
+#7 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(951): App\Controllers\Login->index()
+#8 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /mnt/DATA/SINAU/ci4/visit_be/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#2 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+#4 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/BaseModel.php(675): CodeIgniter\Model->doFindAll()
+#5 /mnt/DATA/SINAU/ci4/visit_be/app/Controllers/Login.php(28): CodeIgniter\BaseModel->findAll()
+#6 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(951): App\Controllers\Login->index()
+#7 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#9 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 /mnt/DATA/SINAU/ci4/visit_be/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#12 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#13 {main}
+ERROR - 2026-02-08 13:21:46 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#3 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+#5 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/BaseModel.php(675): CodeIgniter\Model->doFindAll()
+#6 /mnt/DATA/SINAU/ci4/visit_be/app/Controllers/Login.php(28): CodeIgniter\BaseModel->findAll()
+#7 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(951): App\Controllers\Login->index()
+#8 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /mnt/DATA/SINAU/ci4/visit_be/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#2 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+#4 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/BaseModel.php(675): CodeIgniter\Model->doFindAll()
+#5 /mnt/DATA/SINAU/ci4/visit_be/app/Controllers/Login.php(28): CodeIgniter\BaseModel->findAll()
+#6 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(951): App\Controllers\Login->index()
+#7 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#9 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 /mnt/DATA/SINAU/ci4/visit_be/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#12 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#13 {main}
+ERROR - 2026-02-08 13:22:27 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#3 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+#5 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/BaseModel.php(675): CodeIgniter\Model->doFindAll()
+#6 /mnt/DATA/SINAU/ci4/visit_be/app/Controllers/Login.php(28): CodeIgniter\BaseModel->findAll()
+#7 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(951): App\Controllers\Login->index()
+#8 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /mnt/DATA/SINAU/ci4/visit_be/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#2 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+#4 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/BaseModel.php(675): CodeIgniter\Model->doFindAll()
+#5 /mnt/DATA/SINAU/ci4/visit_be/app/Controllers/Login.php(28): CodeIgniter\BaseModel->findAll()
+#6 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(951): App\Controllers\Login->index()
+#7 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#9 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 /mnt/DATA/SINAU/ci4/visit_be/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#12 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#13 {main}
+ERROR - 2026-02-08 13:22:33 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#3 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+#5 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/BaseModel.php(675): CodeIgniter\Model->doFindAll()
+#6 /mnt/DATA/SINAU/ci4/visit_be/app/Controllers/Login.php(28): CodeIgniter\BaseModel->findAll()
+#7 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(951): App\Controllers\Login->index()
+#8 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /mnt/DATA/SINAU/ci4/visit_be/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#2 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+#4 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/BaseModel.php(675): CodeIgniter\Model->doFindAll()
+#5 /mnt/DATA/SINAU/ci4/visit_be/app/Controllers/Login.php(28): CodeIgniter\BaseModel->findAll()
+#6 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(951): App\Controllers\Login->index()
+#7 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#9 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 /mnt/DATA/SINAU/ci4/visit_be/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#12 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#13 {main}
+ERROR - 2026-02-08 13:24:00 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#3 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+#5 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/BaseModel.php(675): CodeIgniter\Model->doFindAll()
+#6 /mnt/DATA/SINAU/ci4/visit_be/app/Controllers/Login.php(28): CodeIgniter\BaseModel->findAll()
+#7 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(951): App\Controllers\Login->index()
+#8 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /mnt/DATA/SINAU/ci4/visit_be/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#2 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+#4 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/BaseModel.php(675): CodeIgniter\Model->doFindAll()
+#5 /mnt/DATA/SINAU/ci4/visit_be/app/Controllers/Login.php(28): CodeIgniter\BaseModel->findAll()
+#6 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(951): App\Controllers\Login->index()
+#7 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#9 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 /mnt/DATA/SINAU/ci4/visit_be/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#12 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#13 {main}
+ERROR - 2026-02-08 13:24:00 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#3 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+#5 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/BaseModel.php(675): CodeIgniter\Model->doFindAll()
+#6 /mnt/DATA/SINAU/ci4/visit_be/app/Controllers/Login.php(28): CodeIgniter\BaseModel->findAll()
+#7 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(951): App\Controllers\Login->index()
+#8 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /mnt/DATA/SINAU/ci4/visit_be/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#2 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+#4 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/BaseModel.php(675): CodeIgniter\Model->doFindAll()
+#5 /mnt/DATA/SINAU/ci4/visit_be/app/Controllers/Login.php(28): CodeIgniter\BaseModel->findAll()
+#6 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(951): App\Controllers\Login->index()
+#7 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#9 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 /mnt/DATA/SINAU/ci4/visit_be/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#12 /mnt/DATA/SINAU/ci4/visit_be/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('...')
+#13 {main}
