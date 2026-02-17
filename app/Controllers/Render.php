@@ -28,6 +28,28 @@ class Render extends BaseController
         }
 
     }
+
+    public function kunjunganImage($imageName)
+    {
+        $mimeType = 'image/jpg';
+        try {
+            $image = file_get_contents(WRITEPATH.'uploads/kunjungan/'.$imageName);
+            $this->response
+            ->setStatusCode(200)
+            ->setContentType($mimeType)
+            ->setBody($image)
+            ->send();
+        } catch (\Throwable) {
+            $no_image = file_get_contents(WRITEPATH.'uploads/No_Image_Available.jpg');
+            $this->response
+            ->setStatusCode(404)
+            ->setContentType($mimeType)
+            ->setBody($no_image)
+            ->send();
+        }
+
+    }
+
     public function js ($jsName)
     {
         $mimeType = 'text/javascript';
