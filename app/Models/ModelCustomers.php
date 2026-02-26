@@ -13,7 +13,7 @@ class ModelCustomers extends Model
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
     protected $allowedFields    = [
-        'customer_id', 'name', 'address', 'latitude', 'longitude', 'phone', 'aktif'
+        'name', 'address', 'latitude', 'longitude', 'phone', 'aktif', 'imagePath'
     ];
 
     protected bool $allowEmptyInserts = false;

@@ -28,10 +28,10 @@ class Login extends BaseController
             $user = $mu->select('*')->where('user_id', $username)->orWhere('email', $username)->first();
             if (!$user) return $this->fail('user id atau email yang anda masukkan belum terdaftar', 400);
             if ($user['aktif'] == '0') return $this->fail('user Anda tidak aktif silahkan hubungi admin.', 400);
-            
+
             // return print_r([$user['pass'], $json->password]);
             if (!password_verify($json->password, $user['pass'])) return $this->fail("password Anda salah.", 400);
-            
+
             $key = getenv("JWT_KEY");
             // return print_r($key);
             $iat = time();
@@ -45,12 +45,10 @@ class Login extends BaseController
             $token = JWT::encode($payload, $key, 'HS256');
             $resp = [
                 'token' => $token,
-                'user' => [
-                    'email' => $user['email'],
-                    'user_id' => $user['user_id'],
-                    'name' => $user['name'],
-                    'role' => $user['role']
-                ]
+                'id' => $user['id'],
+                'user_id' => $user['user_id'],
+                'name' => $user['name'],
+                'role' => $user['role']
             ];
             return $this->respond($resp);
         } catch (\Throwable $th) {

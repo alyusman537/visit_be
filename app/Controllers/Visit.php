@@ -29,7 +29,7 @@ class Visit extends BaseController
         $token = $decoder->token($header);
         $mv = new ModelVisits();
         $data = $mv->byUserToDay($token->sub);
-        return $this->respond($data);
+        return $this->respond(['data' => $data]);
         // return print_r($token);
     }
 
